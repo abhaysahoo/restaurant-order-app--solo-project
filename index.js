@@ -12,12 +12,13 @@ let order = []
 
 completeOrderBtn.addEventListener('click', event => modalSection.style.display = 'block' )
 
-payBtn.addEventListener('submit', e => {    
-    e.preventDefault()
+payBtn.addEventListener('submit', e => {
     order = []
     orderSection.style.display = 'none'
     modalSection.style.display = 'none'
-    messageBanner.style.display = 'block'
+    messageBanner.style.display = 'block'  
+    e.preventDefault()
+    
 })
 
 document.addEventListener('click', e => {
