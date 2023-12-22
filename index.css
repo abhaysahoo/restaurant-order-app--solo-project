@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Smythe, Helvetica, sans-serif;
+}
+
+
+/* Typography */
+h1,h3 {
+    margin: 0;
+}
+
+h3 {
+    font-weight: lighter;
+    margin-top: 2px;
+}
+
+hr {
+    border: 1px solid #d2d2d2;
+}
+
+header {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.emoji {
+    font-size: 60px;
+    width: 25%;
+}
+
+.add-btn {
+    align-self: flex-start;
+    border-radius: 50%;
+    border: 1.5px solid #dedede;
+    font-size: 32px;
+    color: #3c3c3c;
+    background: none;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: whitesmoke;
+}
+
+.green-btn {
+    width: 100%;
+    margin: 20px 0 0 0;
+    border: none;
+    padding: 14px 0;
+    color: white;
+    background: #16db99;
+    cursor: pointer;
+    border-radius: 3px; 
+}
+
+input {
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    color: #757575;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.remove-order {
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.modal-heading {
+    font-size: 12px;
+    margin: 20px auto 30px auto;
+}
+
+.message-banner {
+    color: #065f46;
+    background: #ecfdf5;
+    padding: 20px 0;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+
+.pay-btn {
+    font-size: 12px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.order-section hr {
+    border: 1.5px solid #393333;
+}
+
+.remove-order,
+.green-btn {
+    font-size: 10px;
+}
+
+.green-btn,
+.modal-heading {
+    font-weight: bold;
+}
+
+.order-heading,
+.item-name,
+.remove-order {
+    font-weight: lighter;
+}
+
+.remove-order,
+.green-btn,
+.modal {
+    font-family: Verdana;
+}
+
+
+/* Layout */
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px 10px 40px 10px;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+.item-name {
+    margin: 0;
+}
+
+.item-ingredients {
+    color: #8b8b8b;
+    margin-top: 0;
+}
+
+.order-list {
+    margin: 30px 0 20px 0;
+}
+
+.order-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 260px;
+    height: 280px;
+    background: white;
+    box-shadow: 0px 0px 20px 1px #666;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.zero-top-padding {
+    padding-top: 0;
+}
+
+.order-heading,
+.modal-heading,
+.message-banner {
+    text-align: center;
+}
+
+.message-banner-section,
+.modal-section,
+.order-section {
+    display: none;
+}
