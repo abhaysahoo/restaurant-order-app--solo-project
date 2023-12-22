@@ -1,82 +1,96 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <!-- Google Font Smythe -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="index.css">
-    </head>
-    
-    <body>
-        <header>
-            <div class="container">
-                <h1>Jimmy's Diner</h1>
-                <h3>The best burgers and pizzas in town.</h3>
-            </div>
-        </header>
-        
-        <main>
-            <section>
-                <div class="container">
-                    <div class="menu-items" id="menu-items">
-                    </div>
-                </div>
-            </section>    
-            <section class="order-section" id="order-section">
-                <div class="container zero-top-padding">
-                    <h2 class="order-heading">Your Order</h2>
-                    <div class="order-list" id="order-list">    
-                    </div>
-                    <hr>
-                    <div class="order-item">
-                        <div class="font-20">Total Price:</div>
-                        <div class="right" id="total-price">0</div>
-                    </div>
-                    <button class="green-btn" id="complete-order">Complete Order</button> 
-                </div>
-            </section>
-            <section class="message-banner-section" id="message-banner-section">
-                <div class="container zero-top-padding">
-                    <div class="message-banner" id="message-banner">
-                        Thanks, James! Your order is on its way!
-                    </div>
-                </div>   
-            </section>
-            <section class="modal-section" id="modal-section">
-                <div class="modal" id="modal">
-                    <div class="modal-heading">Enter card details</div>
-                    <form class="payment-form">
-                        <input 
-                            type="text" 
-                            placeholder="Enter your name"
-                            required>
-                        <input 
-                            type="tel" 
-                            inputmode="numeric" 
-                            pattern="[0-9\s]{13,19}"
-                            maxlength="19" 
-                            placeholder="Enter card number"
-                            required>
-                        <input 
-                            type="text"
-                            maxlength="3"
-                            max="999"
-                            min="000"
-                            step="1"  
-                            pattern="[0-9]{3}"
-                            placeholder="Enter CVV"
-                            required>
-                        <button 
-                            class="green-btn pay-btn" 
-                            type="submit" 
-                            id="pay">
-                            Pay</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-	<script src="index.js" type="module"></script>
-    </body>
-</html>
+  <head>
+    <title>Add to Cart</title>
+    <!-- Mobile View -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Smythe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
 
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <h1>Jimmy's Diner</h1>
+        <h3>The best burgers and pizzas in town.</h3>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- MENU -->
+      <section>
+        <div class="container">
+          <div class="menu-items" id="menu-items"></div>
+        </div>
+      </section>
+
+      <!-- ORDER SECTION -->
+      <section class="order-section" id="order-section">
+        <div class="container zero-top-padding">
+          <h2 class="order-heading">Your Order</h2>
+          <div class="order-list" id="order-list"></div>
+          <hr />
+          <div class="order-total">
+            <div class="font-20">Total Price:</div>
+            <div class="right" id="total-price">0</div>
+          </div>
+          <button class="green-btn" id="complete-order">Complete Order</button>
+        </div>
+      </section>
+
+      <!-- ORDER COMPLETION MESSAGE SECTION -->
+      <section class="message-banner-section" id="message-banner-section">
+        <div class="container zero-top-padding">
+          <div class="message-banner" id="message-banner">
+            Thanks, James! Your order is on its way!
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD PAYMENT MODAL SECTION -->
+      <section class="modal-section" id="modal-section">
+        <div class="modal" id="modal">
+          <div class="modal-heading">Enter card details</div>
+          <form class="payment-form" id="payment-form">
+            <input type="text" placeholder="Enter your name" required />
+            <input
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              maxlength="19"
+              placeholder="Enter card number"
+              required
+            />
+            <input
+              type="text"
+              maxlength="3"
+              max="999"
+              min="000"
+              step="1"
+              pattern="[0-9]{3}"
+              placeholder="Enter CVV"
+              required
+            />
+            <button class="green-btn pay-btn" type="submit">Pay</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
